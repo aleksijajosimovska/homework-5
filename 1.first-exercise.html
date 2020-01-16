@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+    *{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clearfix::before,
+.clearfix::after{
+    content:'';
+    display:table;
+
+}
+.clearfix::after{
+    clear: both;
+
+}
+
+.card{
+    position:relative;
+    border: 1px solid #eeeeee;
+    border-radius: 3px;
+    max-width: 500px;
+    width:100%;
+    padding:29px 25px;
+
+}
+
+.card-thumb{
+    position: absolute;
+    left:0;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.card-info{
+    padding-left: 235px;
+}
+
+.card-info h1{
+    margin:0;
+}
+
+.card-info p{
+margin: :15px;
+font-size:16px;
+}
+
+.btn{
+    display: inline-block;
+    background: blue;
+    margin-top: 15px;
+    padding:7px 15px;
+    text-decoration: none;
+    color:white;
+    border-radius: 5px;
+}
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework5-Exercise1</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <header>
+
+    </header>
+
+    <main>
+       
+        <div class="card">
+            <div class="card-thumb">
+                <img src="exercise-1-img.jpg" alt="">
+                
+            </div>
+            <div class="card-info">
+                <h1>Alice Liddel</h1>
+                <p>Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</p>
+            <a href="#" class="btn">View Profile</a>
+            </div>
+        </div>
+
+    </main>
+
+        <footer>
+
+        </footer>
+</body>
+</html>

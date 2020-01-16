@@ -1,0 +1,129 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.clearfix:before, 
+.clearfix:after { content: ' '; display: table; } 
+.clearfix:after { clear: both; }
+
+.custom-div {
+    
+}
+
+/* Grid */
+.container:before,
+.container:after,
+.row:before,
+.row:after {
+    content: '';
+    display: table;
+}
+
+.container:after,
+.row:after {
+    clear: both;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.container-fluid {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Custom code */
+html, 
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+/* Section: Hero */
+
+.section-hero {
+    height: 100%;
+    text-align: center;
+    display: table;
+    width: 100%;
+    padding: 50px 0;
+    background: url("../img/nature1") no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+.section-hero:before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* pointer-events: none; */
+}
+
+.hero-content {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    color: white;
+    margin: 50px;
+}
+
+.p-above-heading {
+    margin: 40px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.heading {
+    margin: 30px;
+    font-size: 40px;
+    text-align:center;
+    font-weight: 500px;
+}
+
+.hero-btn {
+    margin: 20px;
+    padding: 9px 25px 9px 25px;
+    display: inline-block;
+    background: #000000;
+    color: white;
+    text-decoration: none;
+    box-shadow: 2px 1px 1px 1px rgba(48, 48, 48, 0.24);
+    text-transform: uppercase;
+    font-size: 15px;
+    border-radius: 3px;
+}
+
+
+
